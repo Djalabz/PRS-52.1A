@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Lergo accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+            <!-- header>h1+hr+(ul>(li>a)*2)+hr -->
+            <header>
+                <h1>LEGO Webstore</h1>
+                <hr>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="acheter.html">Acheter</a></li>
+                </ul>
+                <hr>
+            </header>
+
+            
+            <main>
+
+                <!-- form>h2+p+h3+p+(input+p)*2+(label+input)*3+h3+p+(select>option*4)+p+textarea+h3+input+p+input -->
+                <form>
+                    <h2>Acheter des LEGO</h2>
+                    <p>Remplissez le formulaire ci-dessous pour commander des LEGO !</p>
+                    <h3>Informations personnelles</h3>
+
+                    <!-- Ici mes radios. Il faut qu'elles aient le meme name afin de ne pouvoir qu'en sélectionner qu'une (ce qui est le but) -->
+                    <p>Civilité</p>
+
+                    <div class="gender">
+                        <input value="mr" name="gender" type="radio" required>
+                        <p>Mr</p>
+                        <input value="mme" name="gender" type="radio">
+                        <p>Mme</p>
+                    </div>
+
+                    <!-- Ici mes inputs pour le prénom, nom etc -->
+                    <label for="firstname">¨Prénom :</label>
+                    <input name="firstname" placeholder="Ici votre prénom ..." id="firstname" type="text" required>
+                    
+                    <label for="lastname">¨Nom :</label>
+                    <input name="lastname" placeholder="Ici votre nom ..." id="lastname" type="text" required>
+                    
+                    <label for="email">Email :</label>
+                    <input placeholder="Ici votre email ..." id="email" name="email" type="email">
+
+
+                    <h3>Informations de livraison</h3>
+
+                    <p>Quantité commandée :</p>
+                    <select name="quantity" id="boxes">
+                        <option value="one">1 boite</option>
+                        <option value="two">2 boites</option>
+                        <option value="three">3 boites</option>
+                        <option value="four">4 boites</option>
+                    </select>
+
+                    <p>Adresse de livraison : </p>
+                    <textarea name="adress" id="adress"></textarea>
+                    
+                    <h3>Confirmation</h3>
+
+                    <div class="check">
+                        <input name="certification" type="checkbox">
+                        <p>J'ai relu ma commande et certifie que ces informations sont correctes.</p>
+                    </div>
+
+                    <input value="Confirmer la commande" name="submit" type="submit">
+                </form>
+
+            </main>
+
+            <!-- footer>hr+a+p*2 -->
+            <footer>
+                <hr>
+                <a href="#top">Retour en haut de page</a>
+                <p>TP1 : Découverte de HTML et CSS</p>
+                <p>L2 Développement Web - 2018</p>
+            </footer>
+    </div>
+    
+</body>
+</html>

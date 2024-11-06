@@ -1,0 +1,26 @@
+h1 {
+    font-style: italic;
+    color: darkred;
+}
+
+h2 {
+    color: green;
+    text-transform: uppercase;
+} 
+
+div h2 {
+    color: orange;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+div a:hover {
+    color: red;
+} 
+
+body {
+    background-image: url("./vue-mer.jpg");
+}

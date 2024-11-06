@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier fichier HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <!-- Pour commenter : ctrl + k + c
+     Pour decommenter : ctrl + k -->
+
+     <!-- Les titres en HTML de h1 a h6 -->
+    <h1>Je suis un titre h1</h1>
+    <h2>Et moi un h2</h2>
+    <h3 class="big-text">ensuite h3 ...</h3>
+
+    <!-- Ici la balise p pour les paragraphes.
+    On peut generer du faux texte avec lorem ipsum : lorem * le nbr de lignes que l'on veut generer -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit aspernatur ea cum facilis reprehenderit delectus dignissimos porro, harum blanditiis ab in aperiam odio doloribus aut. Doloribus cum temporibus quod?
+    Aspernatur, aperiam? Aperiam mollitia laboriosam quasi et earum nihil autem maxime animi explicabo velit reiciendis molestias veniam vitae tempore nulla voluptatibus voluptatum, cupiditate, dolorem vel! Sunt ut animi accusantium velit.</p>
+
+    <!-- Les liens se font avec la balise a et href determine quelle est la cible du lien  -->
+    <a href="https://ecole-ipssi.com/">Lien vers l'ecole Ipssi</a>
+
+    <!-- !!!! EMMET -> va nous permettre d'ecrire du HTML tres rapidement -->
+    <!-- ex : Je veux creer un h1 puis un h2 puis 3 liens je peux faire : h1+h2+a*3   -->
+
+    <!-- Img nous permet d'afficher des images. C'est une balise orpheline cad sans balise de cloture -->
+    <!-- <img src="./vue-mer.jpg" alt="vue mer"> -->
+
+    <!--  2 types de listes en HTML : Listes ordonnées et non-ordonnées -->
+     <!-- Les listes sont toujours composées de balises li, cad les éléments de la liste  -->
+     <ol>
+        <li>Chat</li>
+        <li>Chien</li>
+        <li>Canard</li>
+     </ol>
+
+     <ul>
+        <li>Paris</li>
+        <li>Berlin</li>
+     </ul>
+
+     <!-- Les tableaux en HTML -->
+    <!-- Les tableaux contiennent des tr pour table rows
+    Il y a 2 types de balises dans les tr : les th ou table head pour les en-tetes 
+    et les td pour table data cad les cellules classiques -->
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Age</th>
+            <th>Ville</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>London</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>23</td>
+            <td>Chicago</td>
+        </tr>
+    </table>
+<!-- 
+    Les formulaires en HTML c'est vavec la balise form 
+    Elle contient des inputs dont il faut préciser le type (text, password, checkbox etc)
+    Il faudra aussi donner un nom - name - approprié a chaque input -->
+    <!-- Avec l'attribut required on oblige a remplir l'input sinon message du navigateur qui nous demande de le f aire -->
+    <form>
+        <label for="username">Nom d'utilisateur</label>
+        <input name="username" type="text" placeholder="Ici votre username ..." required>  
+        <input name="password" type="password" placeholder="Ici votre mdp ..."> 
+        <input type="checkbox" name="ma-checkbox">
+        <input type="radio" name="ma-radio">
+        <input name="submit" type="submit" value="Soumettre">     
+    </form>
+
+    <!-- Ma balise button sert a creer des boutons -->
+    <button id="my-button">Mon bouton</button>
+
+    <!-- Les divs sont des balises neutres qui servent le plus souvent de container
+    Elles permettent de regrouper plusieurs elements en leur sein -->
+    <div>
+        <h2 id="mon-h2">Je suis un h2 dans la div (je suis donc son enfant)</h2>
+        <p>Les div c'est souvent utilisé comme des conteneurs</p>
+    </div>
+
+    <!-- Les balises semantiques sont un peu comme des divs sauf qu'elles donnent 
+    un contexte a leur contenu. ex : nav, footer, header ou encore les sections -->
+    <nav></nav>
+    <header></header>
+    <footer></footer>
+    <section></section>
+
+</body>
+</html>
+

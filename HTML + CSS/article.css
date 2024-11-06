@@ -1,0 +1,61 @@
+
+/* beige clair : #fef0e5
+fond en degradé : orange et darksalmon
+fond du container : peachpuff
+rouge des titres : darkred */
+
+/* Pour les bordures d'images arrondies : border-radius
+Pour le fond en dégradé on utilise background: linear-gradient(col1, col2)
+Pouir les barres utiliser la balise hr  */
+
+body {
+    background: linear-gradient(darksalmon, orange);
+}
+
+#container {
+    width: 600px;
+    background-color: peachpuff;
+    height: auto;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    color: darkred;
+    background-color: #fef0e5;
+    padding: 8px 0;
+}
+
+img {
+    margin-top: 16px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+hr {
+    border: solid black 1px;
+}
+
+nav, footer {
+    background-color: #fef0e5;
+    margin: 8px 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav {
+    scroll-behavior: smooth;
+}
+
+nav a {
+    color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 16px;
+}
+

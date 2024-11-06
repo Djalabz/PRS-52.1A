@@ -1,0 +1,37 @@
+/* Pour faire reference a un element HTML plusieurs solutions : 
+Passer directemenbt par le nom de la balise */
+
+h1 {
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: green;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+/* Autre methode pour changer le style des elments : les classes et les ids */
+/* 
+Les ids : on les utilise avec #, attention en revanche on ne peut les attribuer 
+qu'a un seul element html, ils sont non-reutilisable. Ici on utilise l'id de notre deuxieme h2 de la pâge */
+#mon-h2 {
+    text-align: left;
+}
+
+
+/* Les classes : Comme les ids sauf qu'elles sont utilisables sur plusieurs elemenets html
+On fait reference a une classe en commencant par "." */
+.big-text {
+    font-weight: bolder;
+    color: salmon;
+}
+
+/* Je peux selectionner uniquement une balise qui se trouve dans une autre. 
+Ici je vbeux modifier le paragraphe qui se trouve dans ma div */
+div p {
+    text-decoration: overline;
+} 

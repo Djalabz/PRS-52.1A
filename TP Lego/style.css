@@ -1,0 +1,52 @@
+body {
+    background-color: gray;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    padding: 16px;
+}
+
+table, th, td {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"] {
+    width: 300px;
+}
+
+select {
+    width: 80px;
+}
+
+textarea {
+    width: 350px;
+    height: 250px;
+}
+
+input[type="submit"] {
+    width: 180px;
+}
+
+.gender, .check {
+    display:flex;
+    margin-bottom: 16px;
+}
+
+p {
+    margin: 8px;
+}
